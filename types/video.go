@@ -9,11 +9,11 @@ type VideoDashVideoStream struct {
 	ID           int      `json:"id"`
 	BaseURL      string   `json:"baseUrl"`
 	BackupURL    []string `json:"backupUrl"`
-	Bandwidth    int      `json:"bandwidth"`
+	Bandwidth    int64    `json:"bandwidth"`
 	MimeType     string   `json:"mimeType"`
 	Codecs       string   `json:"codecs"`
-	Width        int      `json:"width"`
-	Height       int      `json:"height"`
+	Width        int64    `json:"width"`
+	Height       int64    `json:"height"`
 	FrameRate    string   `json:"frameRate"`
 	Sar          string   `json:"sar"`
 	StartWithSap int      `json:"startWithSap"`
@@ -29,7 +29,7 @@ type VideoDashAudioStream struct {
 	ID           int      `json:"id"`
 	BaseURL      string   `json:"baseUrl"`
 	BackupURL    []string `json:"backupUrl"`
-	Bandwidth    int      `json:"bandwidth"`
+	Bandwidth    int64    `json:"bandwidth"`
 	MimeType     string   `json:"mimeType"`
 	Codecs       string   `json:"codecs"`
 	Width        int      `json:"width"`
